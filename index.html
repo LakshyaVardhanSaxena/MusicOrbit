@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Orbit</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utiliti.css">
+    <link rel="icon" href="img/favicon.svg">
+</head>
+<body>
+    <div class="home flex bg-black p-1">
+        <div class="hamburgerContainer">
+            <div class="hamburger">
+                <img src="img/hamburger.svg">
+            </div>
+            <div class="logo  m-1"><img src="img/logo.svg"></div>
+        </div>
+        <ul class="flex">
+
+            <li><img class="home1 filter" src="img/home.svg" alt="home"></li>
+
+            <div class="search-box flex ">
+                <img class="search filter" src="img/search.svg" alt="home">
+                <input class="input " type="text" placeholder="What do you want to play?">
+                <img class=" folder " src="img/folder.svg">
+            </div>
+            
+            <div class="hedder">
+                <div class="buttons1">
+                    <button class="premiumbtn">Premium</button>
+                    <button class="supportbtn">Support</button>
+                    <button class="downloadbtn">Download</button>
+                </div>
+
+                <button class="signupbtn">Sign up</button>
+                <button class="loginbtn">Log in</button>
+            </div>
+        </ul>
+    </div>
+
+    <div class="container flex bg-black">
+        <div class="left flex bg-gray rounded">
+
+            <div class="library  bg-gray m-1 p-1">
+
+                <div class="logo  m-1">
+                    <div class="logo1"><img src="img/logo.svg"></div>
+                    <div class="close"><img src="img/close.svg"></div>
+                </div>
+
+                <h3>
+                    Your Library
+                    <img class=" plus filter " src="img/plus.svg">
+                </h3>
+
+                <div class="songList">
+                    <ul>
+                    </ul>
+                </div>
+
+                <div class="footer">
+
+                    <div><a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety &amp; Privacy Center</span>
+                        </a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a></div>
+
+                    <div><a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right rounded">
+
+            <div class="trending-song">
+                <h1> Trending songs </h1>
+                <div class="cardContainer">  </div>
+
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="songTrack">
+                    <div class="songInfo"></div>
+                    <div class="songButtons">
+                        <img id="previous" src="img/previous.svg">
+                        <img id="play" src="img/play.svg">
+                        <img id="next" src="img/next.svg">
+                    </div>
+
+                    <div class="vol">
+                        <div class="songTime"></div>
+                        <div class="voltime">
+                            <div class="volume">
+                                <img src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,797 @@
+:root {
+    --a: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.left {
+    width: 25vw;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    height: 42vw;
+    margin: 3px;
+}
+
+.right {
+    width: 75vw;
+    background-color: #151515;
+    flex: 1;
+    padding: 4px;
+    height: 38vw;
+    overflow-y: scroll;
+    margin: 3px;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #4b4a4a;
+}
+
+.logo img {
+    width: 39px;
+    height: 39px;
+    margin-top: 4px;
+}
+
+.home {
+    gap: 10px;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.home ul {
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.home ul li {
+    display: flex;
+    align-items: center;
+}
+
+.home-icon {
+    position: relative;
+}
+
+.home1 {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #E0E0E0;
+    background-color: #dacccc;
+    border-radius: 50%;
+    padding: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.home1:hover {
+    padding: 3px;
+    background-color: #c5b7b7;
+
+}
+
+.search-box {
+    background-color: #404040;
+    width: 100%;
+    /* max-width:400px; */
+    padding: 8px;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+}
+
+.search-box:hover {
+    background-color: #494949;
+}
+
+.search {
+    width: 22x;
+    height: 20px;
+    margin-left: 12px;
+    margin: 8px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    flex: 1;
+    color: white;
+    padding: 0 8px 0 0;
+    height: 100%;
+    outline: none;
+    font-size: 14px;
+}
+
+.input::placeholder {
+    color: #fedede;
+}
+
+.folder {
+    width: 24px;
+    margin-right: 12px;
+    margin-left: 8px;
+    flex-shrink: 0;
+    filter: invert(1) brightness(196%) contrast(55%);
+    cursor: pointer;
+}
+
+.folder:hover {
+    filter: invert(1);
+    width: 25px;
+    height: 42px;
+}
+
+.premiumbtn {
+    background-color: black;
+    color: rgb(225, 226, 226);
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.premiumbtn:hover {
+    font-weight: 700;
+    color: white;
+
+}
+
+.supportbtn {
+    background-color: black;
+    color: rgb(225, 226, 226);
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.supportbtn:hover {
+    font-weight: 700;
+    color: white;
+
+}
+
+.downloadbtn {
+    background-color: black;
+    color: rgb(225, 226, 226);
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.downloadbtn:hover {
+    font-weight: 700;
+    color: white;
+
+}
+
+.signupbtn {
+    background-color: black;
+    color: rgb(225, 226, 226);
+    width: 60px;
+    height: 34px;
+    cursor: pointer;
+    border: none;
+}
+
+.signupbtn:hover {
+    font-weight: 700;
+    color: white;
+
+}
+
+.loginbtn {
+    border: none;
+    padding: 10px;
+    width: 100px;
+    height: 44px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    border: 2px solid red;
+
+}
+
+.loginbtn:hover {
+    width: 102px;
+    height: 46px;
+    font-weight: 750;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburgerContainer {
+    display: flex;
+    align-items: center;
+}
+
+.hedder {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 62%;
+    align-items: center;
+
+}
+
+
+.plus {
+    width: 25px;
+    height: 25px;
+    align-self: flex-end;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.plus:hover {
+    opacity: 1;
+}
+
+h3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library {
+    /* font-weight: 700; */
+    min-height: 80vh;
+    position: relative;
+    flex: 1;
+}
+
+.library .logo {
+    display: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: -9px;
+    height: 85px;
+    margin: 0px 0px;
+    padding: 8px;
+    overflow: hidden;
+    gap: 15px;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.left {
+    width: 30vw;
+}
+
+.right {
+    width: 70vw;
+}
+
+.input {
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+.input:hover {
+    font-weight: 500;
+    color: white;
+
+}
+
+.search-box {
+    max-width: 484px;
+}
+
+
+.trending-song h1 {
+    font-size: 130%;
+    margin: 25px 25px;
+}
+
+
+.cardContainer {
+    margin: 0px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+}
+
+.card {
+    width: 12.9vw;
+    height: 42vh;
+    border-radius: 7px;
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.card:hover {
+    background-color: #504f4f;
+    --a: 1;
+
+}
+
+.card>* {
+    padding: 5px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px
+}
+
+.play img {
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #05da25;
+    position: absolute;
+    right: 15px;
+    top: 137px;
+    opacity: var(--a);
+    transition: all 0.3s ease-out;
+}
+
+.card:hover img {
+    opacity: 1;
+    top: 128px;
+
+}
+
+.play:hover img {
+    width: 42px;
+
+}
+
+.playbar {
+    width: 68.5%;
+    height: 55px;
+    position: fixed;
+    padding: 5px;
+    background: rgb(48, 198, 93);
+    bottom: 1%;
+}
+
+.songButtons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 6px;
+}
+
+.songButtons img {
+    height: 28px;
+    cursor: pointer;
+}
+
+.songList {
+    margin: 10px 0px;
+    height: 60vh;
+    overflow: auto;
+    padding: 5px;
+}
+
+.songList ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    list-style: number;
+    /* font-family: cursive; */
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+font-weight: 800; 
+
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 2px 6px;
+}
+
+.songList img {
+    filter: invert(1);
+    height: 35px;
+}
+
+.seekbar {
+    width: 99%;
+    height: 5px;
+    margin: 2px 0px;
+    border: 1px solid black;
+    background-color: #fd0404;
+    position: absolute;
+    bottom: 6%;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.circle {
+    height: 13px;
+    width: 13px;
+    background-color: #fd0404;
+    position: relative;
+    cursor: pointer;
+    bottom: 200%;
+    border-radius: 10px;
+    transition: left 0.5s
+}
+
+.songTrack {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.songInfo {
+    width: 351px;
+    margin-left: 8px;
+}
+
+.pause {
+    color: #fc0404;
+    width: 70px;
+    height: 20px;
+}
+
+.voltime {
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.vol {
+    display: flex;
+    gap: 10px;
+}
+
+.volume {
+    width: 25px;
+    cursor: pointer;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100px;
+    cursor: pointer;
+}
+
+.songTime {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timevol {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    width: 220px;
+    height: 40px;
+}
+
+input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid black;
+    background: linear-gradient(90deg, #2b9953, #37ff00);
+    border-radius: 10px;
+
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: #0000ff;
+    border: 1px solid rgb(6, 252, 67);
+    cursor: pointer;
+}
+
+.cardBox {
+    width: 100%;
+}
+
+@media (max-width: 870px) {
+    .left {
+        position: absolute;
+        top: 0;
+        left: -110%;
+        transition: all .3s;
+        width: 385px;
+        height: 100vh;
+        z-index: 1;
+        padding: 0;
+        border: 5px solid #0f0b0b;
+
+    }
+
+    .right {
+        width: 100vw;
+        height: 98vh;
+        overflow: scroll;
+        margin: 0;
+        padding: 0;
+    }
+
+    .playbar {
+        width: 100vw;
+        bottom: 0;
+        border: 6px solid black;
+        height: 140px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+    }
+
+    .songTrack {
+        color: #000000;
+        font-weight: 500;
+        font-size: 23px;
+        height: 9vh;
+        padding: 5px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .trending-song h1 {
+        font-size: 30px;
+        margin: 15px 30px;
+    }
+
+    .seekbar {
+        width: calc(100vw - 6vw);
+        bottom: 4%;
+    }
+
+    .songInfo {
+        width: 100%;
+    }
+
+    /* .range {
+        display: none;
+    } */
+
+
+    .search-box {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        filter: invert(1);
+        width: 40px;
+    }
+
+    .library h3 {
+        margin-top: 10px;
+        margin-left: 6px;
+        margin-right: 9px;
+    }
+
+    .library .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo1 {
+        margin-top: -5px;
+    }
+
+    .close {
+        margin-top: -5px;
+        filter: invert(1);
+    }
+
+    .search-box {
+        max-width: 81px;
+        min-width: 290px;
+        background-color: #000000;
+        padding: 0;
+    }
+
+    .home ul {
+        gap: 0;
+        flex: 1;
+        justify-content: space-between;
+    }
+
+    .hedder {
+        display: flex;
+        justify-content: end;
+        /* width: 48px; */
+    }
+
+    .loginbtn {
+        width: 76px;
+        background-color: #000000;
+        color: #dacccc;
+        border: 0;
+    }
+
+    .trending-song h1 {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .card {
+        width: 99vw;
+        display: table;
+        margin: 4px 10px;
+        padding: 10px;
+        background-color: #2f2f2f;
+
+    }
+
+    .cardContainer {
+        margin: 0;
+        gap: 0px;
+        margin-bottom: 2vh;
+        background-color: #000000;
+
+    }
+
+    .buttons1 {
+        display: none;
+    }
+
+
+    .card img {
+        margin-bottom: 10px;
+    }
+
+    .card:hover {
+        background-color: #2f2f2f;
+    }
+
+    .card img {
+        border-radius: 0%;
+    }
+
+    .play img {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+@media (max-width: 560px) {
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        opacity: 1;
+        transition: all 2s;
+        margin-bottom: 7vh;
+    }
+
+    .songTrack {
+        font-size: 15px;
+        height: 95px;
+    }
+
+    .loginbtn {
+        width: 65px;
+    }
+
+    .playbar {
+        height: 130px;
+    }
+
+    .input {
+        display: none;
+    }
+
+    .left {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .hedder {
+        gap: 0;
+        padding: 0;
+    }
+
+    .search-box {
+        min-width: 81px
+    }
+
+    .buttons1 {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    .loginbtn {
+        width: 52px;
+        padding: 0;
+    }
+
+    .buttons1 {
+        display: none;
+    }
+
+    .cardContainer {
+        margin-bottom: 12vh;
+    }
+}
+
+@media (max-width: 344px) {
+    .buttons1 {
+        display: none;
+    }
+
+    .cardContainer {
+        margin-bottom: 6vh;
+    }
+}
+
+@media (max-width: 1280px) {
+    .right {
+        height: 84vh;
+    }
+
+    .left {
+        height: 92vh;
+    }
+
+}
