@@ -46,8 +46,7 @@ MUSIC-ORBIT/
 │
 │ ├── cover.jpg # Common cover image
 | └── info.json # Songs metadata
-|
-└── .htaccess
+| └── .htaccess
 
 ```
 
