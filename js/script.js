@@ -98,7 +98,7 @@ async function displayAlbums() {
 
                 // Get the metadata of the folder
                 try {
-                    let fetchResponse = await fetch(`http://127.0.0.1:5500/songs/${folder}/info.json`);
+                    let fetchResponse = await fetch(`/songs/${folder}/info.json`);
                     if (!fetchResponse.ok) {
                         console.warn(`info.json not found for ${folder}, status: ${fetchResponse.status}`);
                         continue;
@@ -221,3 +221,4 @@ document.querySelector(".volume>img").addEventListener("click", e => {
 })
 
 main();
+
