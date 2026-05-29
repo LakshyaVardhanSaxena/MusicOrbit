@@ -1,4 +1,3 @@
-console.log('helloword');
 let currentSong = new Audio();
 let songs;
 let currentFolder;
@@ -80,7 +79,7 @@ const playMusic = (track, pause = false) => {
 };
 
 async function displayAlbums() {
-    let a = await fetch(`http://127.0.0.1:5500/songs/`);
+    let a = await fetch(`songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -107,7 +106,7 @@ async function displayAlbums() {
                     console.log(jsonData);
                     cardContainer.innerHTML += `<div data-folder="${folder}" class="card">
                                     <div>
-                                        <img src="/songs/${folder}/cover.jpg" alt="Cover">
+                                        <img src="songs/${folder}/cover.jpg" alt="Cover">
                                         <h2>${jsonData.title}</h2>                              
                                         <p>${jsonData.description}</p>
                                         <div class="play">
@@ -136,7 +135,7 @@ async function displayAlbums() {
 async function main() {
 
     // Get the list of all songs
-    await getSongs("songs/chill-beats");
+    await getSongs("songs/Lofi");
     playMusic(songs[0], true);
 
     // Display all the albums on the page
@@ -208,6 +207,7 @@ async function main() {
 document.querySelector(".volume>img").addEventListener("click", e => {
     console.log(e.target)
     console.log("changing", e.target.src)
+    
     if (e.target.src.includes("volume.svg")) {
         e.target.src = e.target.src.replace("volume.svg", "mute.svg")
         currentSong.volume = 0;
@@ -221,5 +221,3 @@ document.querySelector(".volume>img").addEventListener("click", e => {
 })
 
 main();
-
-
